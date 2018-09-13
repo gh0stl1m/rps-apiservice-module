@@ -18,8 +18,8 @@ const serverPort = serverConf.port || 8888;
 // Initialize server
 server.listen(serverPort, (err) => {
   if (err) {
-    logger.error(`Error initializing server: ${err.message}`);
+    logger.error(`(rps-apiservice-module): Error initializing server: ${err.message}`);
   } else {
-    logger.info(`Server running at port: ${serverPort}`);
+    logger.info(`(rps-apiservice-module): Server running at port: ${serverPort}`);
   }
 });
