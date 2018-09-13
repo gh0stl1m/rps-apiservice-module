@@ -1,0 +1,9 @@
+# MongoDB Configuration
+TEST_MONGODB_URI=mongodb://localhost:27017/rpsGame
+TEST_MONGODB_USER=rpsgameappuser
+TEST_MONGODB_PASS=rpsgamepass
+
+# Redis Configuration
+TEST_REDIS_HOST=localhost
+TEST_REDIS_PORT=6379
+TEST_REDIS_FAMILY=4
