@@ -45,7 +45,7 @@ package-lock.json
 # Configuration files for deployment
 .env.test
 .env
-.puienv
+.rpsenv
 
 # Deployment keys
 serverKey
