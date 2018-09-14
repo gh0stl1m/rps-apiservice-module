@@ -13,7 +13,7 @@ const logger = require('./logger');
 // Set global promise with bluebird
 global.Promise = Bluebird;
 
-const serverPort = serverConf.port || 8888;
+const serverPort = serverConf.port || 41000;
 
 // Initialize server
 server.listen(serverPort, (err) => {

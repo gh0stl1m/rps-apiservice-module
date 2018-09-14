@@ -3,13 +3,7 @@ const { userInterface } = require('rps-user-module');
 
 module.exports = [
   async (ctx, next) => {
-    ctx.checkBody('firstName')
-      .notEmpty()
-      .toLowercase();
-    ctx.checkBody('lastName')
-      .notEmpty()
-      .toLowercase();
-    ctx.checkBody('firstName')
+    ctx.checkBody('username')
       .notEmpty()
       .toLowercase();
 
@@ -27,13 +21,9 @@ module.exports = [
     }
   },
   async (ctx) => {
-    const { firstName, lastName, username } = ctx.request.body;
+    const { username } = ctx.request.body;
 
-    const newUser = await userInterface.Create({
-      firstName,
-      lastName,
-      username,
-    });
+    const newUser = await userInterface.Create(username);
 
     return ctx.serverResponse()
       .addData({
